@@ -1,0 +1,40 @@
+Modify your StarFigure code from the previous problem to use a constant for the size. 
+The outputs below use a constant size of 3 (top) and 6 (bottom):
+
+size 3	
+////////\\\\\\\\
+////********\\\\
+****************
+
+size 6
+////////////////////\\\\\\\\\\\\\\\\\\\\
+////////////////********\\\\\\\\\\\\\\\\
+////////////****************\\\\\\\\\\\\
+////////************************\\\\\\\\
+////********************************\\\\
+****************************************
+
+
+public class StarFigure2
+{
+    public static final int CONSTANT = 4;
+    public static void main (String [] args)
+    {
+        for (int i = 0; i < CONSTANT; i++)
+			{
+				for (int j = CONSTANT * 4 - 4; j > i * 4; j--)
+				{
+					System.out.print("/");
+				}
+				for (int h = 1; h <= i * 8; h++)
+				{
+					System.out.print("*");
+				}
+				for (int k = CONSTANT * 4 - 4; k > i * 4; k--)
+				{
+					System.out.print("\\");
+				}
+			System.out.println();
+			}
+    }
+}
