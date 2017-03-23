@@ -1,0 +1,20 @@
+Write a pseudocode algorithm that will produce the following figure as output:
+
++===+===+
+|   |   |
+|   |   |
+|   |   |
++===+===+
+|   |   |
+|   |   |
+|   |   |
++===+===+
+
+
+pseudocode	
+First line print "+" and 3 "=" signs and "+" and 3 "=" signs and "+"
+Second line print "|" with 3 spaces and "|" with 3 spaces and "|"
+Repeat second line 3 more times
+Repeat first line
+Repeat second line 4 times
+Repeat first line
