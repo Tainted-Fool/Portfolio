@@ -9,7 +9,7 @@ Call	             Value Returned
 allDigitsOdd(4822116)	false
 allDigitsOdd(135319)	true
 allDigitsOdd(9175293)	false
-allDigitsOdd(-137)	  true
+allDigitsOdd(-137)	true
 You should not use a String to solve this problem.
 
 
