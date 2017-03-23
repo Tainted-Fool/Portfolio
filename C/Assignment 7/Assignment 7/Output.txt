@@ -1,0 +1,5 @@
+Data created from program
+Name                Average             Grade               
+Mickey Mouse         71.33                C
+Minnie Mouse         91.67                A
+Donald Duck          80.67                B
