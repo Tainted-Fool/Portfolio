@@ -1,0 +1,56 @@
+Write a method called kthLargest that accepts an integer k and an array a as its parameters 
+and returns the element such that k elements have greater or equal value. If k = 0, 
+return the largest element; if k = 1, return the second largest element, and so on.
+
+For example, if the array passed contains the values {74, 85, 102, 99, 101, 56, 84} and 
+the integer k passed is 2, your method should return 99 because there are two values at least as large as 99 (101 and 102).
+
+Assume that 0 <= k < a.length. (Hint: Consider sorting the array, or a copy of the array first.)
+
+
+public static int kthLargest (int k, int [] list)
+{
+    return choose(list, 0, list.length - 1, list.length - k);
+}
+
+public static int choose (int [] list, int b, int c, int d)
+{
+    int e = dummy (list, b, c);
+    int f = e - b + 1;
+    
+    if (f == d)
+    {
+        return list[e];
+    }
+    
+    if ( d < f)
+    {
+        return choose ( list, b, e - 1, d);
+    }
+    
+    return choose (list, e + 1, c, d - f);
+}
+
+public static int dummy (int [] list, int b, int c)
+{
+    int temp = 0;
+    int d = list[c];
+    int e = b - 1;
+    
+    for (int i = b ; i <= c - 1; i++)
+    {
+        if (list[i] <= d)
+        {
+            e++;
+            temp = list[e];
+            list[e] = list[i];
+            list[i] = temp;
+        }
+    }
+    
+    temp = list[e + 1];
+    list[e + 1] = list[c];
+    list[c] = temp;
+    
+    return e + 1;
+}
