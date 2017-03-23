@@ -1,1 +1,1 @@
-These contain C++ programs as well as some MATLAB and Wolfram Mathematica
+These contain C++ assignments as well as some MATLAB and Wolfram Mathematica documents
