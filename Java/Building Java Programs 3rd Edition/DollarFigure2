@@ -1,0 +1,49 @@
+Modify your DollarFigure program from the previous exercise to become a new program called DollarFigure2 
+that uses a global constant for the figure's height. 
+(You may want to make loop tables first.) 
+The previous output used a constant height of 7. 
+The outputs below use a constant size of 3 (top) and 5 (bottom
+
+size 3
+$$$******$$$
+**$$****$$**
+****$**$****
+
+size 5
+$$$$$**********$$$$$
+**$$$$********$$$$**
+****$$$******$$$****
+******$$****$$******
+********$**$********
+
+public class DollarFigure2
+{
+    public static final int CONSTANT = 7;
+    public static void main (String[] args)
+    {
+        for (int i = 1; i <= CONSTANT; i++)
+		{
+			for (int l = 2; l < 2 * i; l++)
+			{
+				System.out.print("*");
+			}
+			for (int j = CONSTANT; j > i - 1; j--)
+			{
+				System.out.print("$");
+			}
+			for (int l = CONSTANT * 2 + 1; l >= 2 * i; l--)
+			{
+				System.out.print("*");
+			}
+			for (int j = CONSTANT; j > i - 1; j--)
+			{
+				System.out.print("$");
+			}
+			for (int l = 2; l < 2 * i; l++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+    }
+}
