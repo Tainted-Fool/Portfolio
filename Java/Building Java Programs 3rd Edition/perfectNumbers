@@ -11,28 +11,27 @@ Here is the console output from a call to perfectNumbers(500):
 Perfect numbers up to 500: 6 28 496 
 
 
-
-    public static void perfectNumbers(int num) 
-    {    	
-    	System.out.print("Perfect numbers up to " + num + ":");
+public static void perfectNumbers(int num) 
+{    	
+    System.out.print("Perfect numbers up to " + num + ":");
     	
-    	for (int i = 1; i <= num; i++)
-    	{
-    		int sum = 0;
-    	 
-    		for (int j = 1; j < i; j++)
-    		{    		    		
-    			if (i % j == 0)
-    			{
-    				sum += j;
-    			}
-    		}
-    	
-    		if (sum == i)
+    for (int i = 1; i <= num; i++)
+    {
+    	int sum = 0;
+     
+    	for (int j = 1; j < i; j++)
+    	{    		    		
+    		if (i % j == 0)
     		{
-    			System.out.print(" " + i);
+    			sum += j;
     		}
     	}
-    	
-    	System.out.println();
+    
+    	if (sum == i)
+    	{
+    		System.out.print(" " + i);
+    	}
     }
+    	
+    System.out.println();
+}
