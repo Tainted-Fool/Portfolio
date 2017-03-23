@@ -1,0 +1,12 @@
+FNAME: Jim
+LNAME: Jones
+ID: 1234D1
+GPA: 2.1
+FNAME: Maude
+LNAME: Johnnasberg
+ID: 893D45
+GPA: 3.95
+FNAME: Bob
+FNAME: Smith
+ID: 556421
+GPA: 3.2
