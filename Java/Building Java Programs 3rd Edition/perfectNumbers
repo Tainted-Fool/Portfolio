@@ -11,6 +11,7 @@ Here is the console output from a call to perfectNumbers(500):
 Perfect numbers up to 500: 6 28 496 
 
 
+
 public static void perfectNumbers(int num) 
 {    	
     System.out.print("Perfect numbers up to " + num + ":");
