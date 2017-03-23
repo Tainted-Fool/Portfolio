@@ -1,4 +1,6 @@
-Write a method called printNumbers that accepts a maximum number as a parameter and prints each number from 1 up to that maximum, inclusive, boxed by square brackets. For example, consider the following calls:
+Write a method called printNumbers that accepts a maximum number as a parameter and 
+prints each number from 1 up to that maximum, inclusive, boxed by square brackets. 
+For example, consider the following calls:
 
 
 printNumbers(15);
