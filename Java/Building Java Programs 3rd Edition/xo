@@ -1,0 +1,100 @@
+Write a static method named xo that accepts an integer size as a parameter and 
+prints a square of size by size characters, where all characters are "o" 
+except that an "x" pattern of "x" characters has been drawn from the corners of the square. 
+In other words, on the first line, the first and last characters are "x"; on the second line, 
+the second and second-from-last characters are "x"; and so on. If 0 or less is passed for the size, no output should be produced.
+
+The following table lists some calls to your method and their expected output:
+
+Call	xo(5);
+Output	
+xooox
+oxoxo
+ooxoo
+oxoxo
+xooox
+
+Call xo(8);
+Output
+xoooooox
+oxooooxo
+ooxooxoo
+oooxxooo
+oooxxooo
+ooxooxoo
+oxooooxo
+xoooooox
+
+Call xo(3);
+Output
+xox
+oxo
+xox
+
+Call xo(1);
+Output
+x
+
+Call xo(0);
+Output
+
+Call xo(12);
+Output
+xoooooooooox
+oxooooooooxo
+ooxooooooxoo
+oooxooooxooo
+ooooxooxoooo
+oooooxxooooo
+oooooxxooooo
+ooooxooxoooo
+oooxooooxooo
+ooxooooooxoo
+oxooooooooxo
+xoooooooooox
+
+Call xo(11);
+Output
+xooooooooox
+oxoooooooxo
+ooxoooooxoo
+oooxoooxooo
+ooooxoxoooo
+oooooxooooo
+ooooxoxoooo
+oooxoooxooo
+ooxoooooxoo
+oxoooooooxo
+xooooooooox
+
+
+public static void xo (int size)
+{
+    //Have to declare when to print "x"
+    int x1 = 0;
+    int x2 = size - 1;
+    
+    //First loop will output how big it should be
+    for (int i = 0; i < size; i++)
+    {
+        //Second loop will output amount of characters inside each line
+        for (int j = 0; j < size; j++)
+        {
+            //If/else statement decides when to print out "x" or "o"
+            if (j == x1 || j == x2)
+            {
+                System.out.print("x");
+            }
+            
+            else
+            {
+                System.out.print("o");
+            }
+        }
+        
+        //Increment and Decrement where to print "x" depending on line
+        System.out.println();
+        x1++;
+        x2--;
+    }
+}
