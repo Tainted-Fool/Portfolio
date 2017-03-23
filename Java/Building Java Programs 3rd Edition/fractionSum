@@ -1,4 +1,5 @@
-Write a method called fractionSum that accepts an integer parameter n and returns as a double the sum of the first n terms of the sequence:
+Write a method called fractionSum that accepts an integer parameter 
+n and returns as a double the sum of the first n terms of the sequence:
 
 fraction sum equation
 
