@@ -1,0 +1,30 @@
+Write a method called randomLines that prints between 5 and 10 random strings of letters (between "a" and "z"), one per line. 
+Each string should have random length of up to 80 characters.
+
+rlcuhubm
+ilons
+ahidbxonunonheuxudxrcgdp
+xmkmkmmmmwmwqjbaeeeerceheelciheihcreidercdeehiuhhhn
+hdcrphdidcrydxgtkdhoendgcidgxfidgfufdgfuuuuuu
+
+
+public static void randomLines()
+{
+    Random r = new Random();
+    String letters = "abcdefghijklmnopqrstuvwxyz";
+    int lines = r.nextInt(6) + 5;
+    
+    for (int i = 0; i < lines; i++)
+    {
+        Random s = new Random();  
+        int length = s.nextInt(80) + 1;
+        
+        for (int j = 0; j < length; j++)
+        {
+            int index = s.nextInt(26);
+            char letter = letters.charAt(index);
+            System.out.print(letter);
+        }
+        System.out.println();
+    }
+}
